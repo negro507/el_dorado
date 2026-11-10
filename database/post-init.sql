@@ -12,3 +12,5 @@ ALTER TABLE dbo.users ADD CONSTRAINT DF_users_status DEFAULT 1 FOR [status];
 ALTER TABLE dbo.users ADD CONSTRAINT DF_users_registration_date DEFAULT SYSDATETIME() FOR [registration_date];
 ALTER TABLE dbo.login_history ADD CONSTRAINT DF_login_history_login_time DEFAULT SYSDATETIME() FOR [login_time];
 GO
+ALTER TABLE dbo.account ADD CONSTRAINT DF_account_opening_date DEFAULT SYSDATETIME() FOR [opening_date];
+GO
